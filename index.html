@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>소소한 투두리스트</title>
+    </head>
+
+    <body>
+        <div id="weather">
+            <b>오늘의 날씨<p>
+            <span></span>
+            <span></span>
+            </b>
+        </div>
+        <h3 id="explain"></h3>
+        <h1 id="clock">00:00:00</h1>
+        <form class="hidden" id="login-form">
+            <input
+             required
+             maxlength="15"
+             type="text"
+             placeholder="이름을 입력해주세요"
+            />
+            <input type="submit" value="Log In" />
+        </form>
+        <h1 class="hidden" id="greeting"></h1>
+        <form id="todo-form">
+            <input type="text" placeholder="할 일을 입력하세요" required/>
+        </form>
+        <ul id="todo-list"></ul>
+        <div id="quote">
+            <span></span><p>
+            <span></span>
+        </div>
+        <script src="js/greeting.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/explain.js"></script>
+    </body>
+</html>

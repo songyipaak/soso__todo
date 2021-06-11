@@ -1,0 +1,108 @@
+body {
+    background: #a5c5c3;
+}
+p{
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+#weather {
+    color: #f05f3b;
+    text-align: right;
+    font-size: 15px;
+}
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#explain {
+    color: #429f92;
+    text-align: center;
+    animation: fadeIn 1s linear;
+}
+#todaydate, #clock {
+    color: #007872;
+    text-align: center;
+}
+
+input[type=text] {
+    text-align: center;
+    background-color: #a5c5c3;
+    border: none;
+    border-bottom: 2px solid #ec380b;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+  }
+
+  #greeting {
+      text-align: center;
+      color: #007872;
+      animation: fadeIn 1s linear;
+  }
+
+  #todo-list {
+      list-style-type: none;
+      color: grey;
+      text-align: center;
+      font-size: 30px;
+  }
+
+form {
+    text-align: center;
+}
+
+#quote {
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+  padding: 5px;
+  position: relative;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #2ecc71;
+}
+
+.btn-2::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+  }
+  
+  .btn-2:hover:after {
+    width: 100%;
+  }
